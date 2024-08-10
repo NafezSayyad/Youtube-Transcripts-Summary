@@ -14,7 +14,7 @@ This Python project allows users to input a YouTube video URL, obtain a transcri
    ```bash
    git clone https://github.com/yourusername/youtube-transcript-summarizer.git
    cd youtube-transcript-summarizer
-2.  ** Set Up a Virtual Enviroment**
+2.  Set Up a Virtual Enviroment
     ```bash
     python -m venv venv
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
