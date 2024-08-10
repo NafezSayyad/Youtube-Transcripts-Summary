@@ -13,7 +13,7 @@ from langchain.prompts.chat import (
 import textwrap
 import os
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "OPENAI_API_KEY"
 
 # Load environment variables
 load_dotenv(find_dotenv())
@@ -32,7 +32,7 @@ def create_db_from_youtube_video_url(video_url):
     return db, transcript
 
 def summarize_video(transcript):
-    chat = ChatOpenAI(model_name="gpt-3.5-turbo-16k", temperature=0.2)
+    chat = ChatOpenAI(model="gpt-4o-mini")
 
     summary_prompt = """
         You are a helpful assistant that summarizes the content of YouTube video transcripts.
